@@ -1,6 +1,7 @@
 # Homecloud
 
-This repository contains the OpenMediaVault package-oriented source tree and related assets.
+This repository contains the OpenMediaVault package-oriented source tree and
+related assets.
 
 ## Getting Started
 
@@ -48,8 +49,10 @@ make clean && make binary
 
 ## Repository layout
 
-- `openmediavault/` – primary package contents, runtime files, scripts, Salt states, and workbench.
-- Root Debian metadata/files – `control`, `rules`, `openmediavault.install`, service/unit files, and packaging helpers.
+- `openmediavault/` – primary package contents, runtime files, scripts, Salt
+  states, and workbench.
+- Root Debian metadata/files – `control`, `rules`,
+  `openmediavault.install`, service/unit files, and packaging helpers.
 - `php-pam/` – PAM PHP package sources.
 
 ## Build
@@ -100,4 +103,12 @@ npm ci
 npm run build:prod
 npm run test:ci
 npm run lint
+```
+
+## Markdown
+
+Run Markdown lint checks from the repository root:
+
+```bash
+npx --yes markdownlint-cli "**/*.md"
 ```
